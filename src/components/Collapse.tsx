@@ -60,7 +60,7 @@ const Collapse = ({ open, setOpen }: Props, ref: any) => {
                     </HeaderContainer>
                     <DescriptionContainer>
                         <CollapseDescription>
-                            In fall of 2019, I worked Musely: a musical
+                            In fall of 2019, I worked on Musely: a musical
                             note-taking app. Our initial user studies exploring
                             pain points for music students revealed a difficulty
                             recording information about music - especially when
