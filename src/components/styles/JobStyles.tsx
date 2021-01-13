@@ -14,6 +14,9 @@ export const JobContainer = styled.div<JobProps>`
         flex-direction: column;
         margin: 2rem 2rem;
     }
+    @media (max-width: 500px) {
+        margin: 2rem 0;
+    }
 `
 
 export const JobHeader = styled.div<JobProps>`
@@ -81,6 +84,9 @@ export const JobDescriptionContainer = styled.div<JobProps>`
     display: flex;
     flex-direction: column;
     flex: 2 1 auto;
+    @media (max-width: 500px) {
+        margin: 0;
+    }
 `
 
 export const JobDescription = styled.div`

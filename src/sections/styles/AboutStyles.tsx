@@ -60,6 +60,9 @@ export const AboutText = styled.div`
     `}
     text-align: justify;
     width: 75%;
+    @media (max-width: 500px) {
+        width: 90%;
+    }
 `
 
 export const CloudImg = styled.img`

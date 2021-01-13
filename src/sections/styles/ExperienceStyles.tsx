@@ -27,6 +27,9 @@ export const ExperienceContainer = styled.div`
     width: 100vw;
     max-width: 1200px;
     position: relative;
+    @media (max-width: 500px) {
+        width: 90vw;
+    }
 `
 
 export const ExperienceHeader = styled.div`

@@ -36,6 +36,15 @@ export const ProjectCardContainer = styled.div`
             margin-left: 20%;
         }
     }
+    @media (max-width: 500px) {
+        flex-direction: column;
+        ${CardContainer}:nth-child(odd) {
+            margin-right: 10%;
+        }
+        ${CardContainer}:nth-child(even) {
+            margin-left: 10%;
+        }
+    }
 `
 
 export const ProjectsHeader = styled.div`

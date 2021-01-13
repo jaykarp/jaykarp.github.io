@@ -30,6 +30,11 @@ export const SkillsGrid = styled.div`
         'Header Header Header'
         'Languages Frameworks Frameworks'
         'Languages Technologies Technologies';
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 `
 
 export const GridHeader = styled.div`
@@ -62,6 +67,11 @@ export const GridLanguages = styled.div`
     @media (max-width: 800px) {
         justify-content: center;
         margin-right: -50%;
+    }
+    @media (max-width: 500px) {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
     }
 `
 
@@ -118,6 +128,11 @@ export const GridFrameworks = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media (max-width: 500px) {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        justify-content: flex-end;
+    }
 `
 
 export const FrameworksContainer = styled.div`
@@ -144,6 +159,11 @@ export const FrameworksContainer = styled.div`
         margin-left: 40px;
         margin-top: 36px;
         z-index: 0;
+    }
+    @media (max-width: 500px) {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 `
 
@@ -180,7 +200,7 @@ export const FrameworksHeader = styled.div`
         font-size: ${small};
         color: ${white};
     `}
-    padding-bottom: 5px
+    padding-bottom: 5px;
 `
 
 export const Framework = styled.div`
@@ -204,6 +224,11 @@ export const GridTechnologies = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media (max-width: 500px) {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
 `
 export const TechnologiesContainer = styled.div`
     ${({
@@ -223,6 +248,10 @@ export const TechnologiesContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding: 20px 20px 10px 20px;
+    @media (max-width: 500px) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
 `
 
 export const TechnologiesLeft = styled.div`

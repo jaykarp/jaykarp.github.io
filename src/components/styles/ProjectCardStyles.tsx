@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled, { css } from 'styled-components/macro'
 
 export const Card = styled.div`
     ${({
@@ -79,13 +79,13 @@ export const CardTag = styled.div<CardProps>`
             borderRadiusSmall,
         },
         color,
-    }) => `
+    }) => css`
         font-family: ${family};
         font-size: calc(${xsmall} - 0.2rem);
         background: ${color};
         margin: 0 0.3rem 0 0;
         border-radius: ${borderRadiusSmall};
-    `}}
+    `}
     padding: 0.2rem;
     color: white;
     white-space: nowrap;

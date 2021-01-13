@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled, { css } from 'styled-components/macro'
 
 export const WidthManager = styled.div`
     background: ${({
@@ -18,6 +18,9 @@ export const ConnectContainer = styled.div`
     flex-direction: column;
     margin: 3rem 0 7rem 0;
     position: relative;
+    @media (max-width: 500px) {
+        margin: 3rem 0 5rem 0;
+    }
 `
 
 export const ConnectHeader = styled.div`
@@ -42,6 +45,9 @@ export const ConnectHeader = styled.div`
 export const ContentContainer = styled.div`
     display: flex;
     z-index: 100;
+    @media (max-width: 450px) {
+        flex-direction: column-reverse;
+    }
 `
 
 export const LinksContainer = styled.div`
@@ -49,6 +55,9 @@ export const LinksContainer = styled.div`
     flex-direction: column;
     flex: 1;
     justify-content: center;
+    @media (max-width: 450px) {
+        align-self: center;
+    }
 `
 
 export const LinkContainer = styled.a`
@@ -60,10 +69,13 @@ export const LinkContainer = styled.a`
                 body: { family },
             },
         },
-    }) => `
+    }) => css`
         color: ${black};
         font-size: ${small};
         font-family: ${family};
+        @media (max-width: 450px) {
+            font-size: calc(${small} + 0.3rem);
+        }
     `}
     display: flex;
     transition: all 0.2s;
@@ -74,6 +86,12 @@ export const LinkContainer = styled.a`
     will-change: transform;
     &:hover {
         transform: translateX(2px);
+    }
+    @media (max-width: 600px) {
+        padding-left: 20%;
+    }
+    @media (max-width: 450px) {
+        padding-left: 0;
     }
 `
 
@@ -101,8 +119,15 @@ export const HeadshotContainer = styled.div`
     flex: 1;
     justify-content: flex-start;
     margin-left: 1rem;
+    @media (max-width: 450px) {
+        justify-content: center;
+        margin-left: 0;
+    }
 `
 
 export const Headshot = styled.img`
     width: 12rem;
+    @media (max-width: 450px) {
+        width: 65vw;
+    }
 `

@@ -8,7 +8,6 @@ import {
     Filler,
     Hamburger,
     HamburgerContainer,
-    Sections,
     SmallItemContainer,
     HeaderTop,
     HeaderNav,
