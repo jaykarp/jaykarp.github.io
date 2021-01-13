@@ -2,7 +2,7 @@
   "name": "web_personal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jaykarp.github.io/web_personal",
+  "homepage": "http://jaykarp.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
