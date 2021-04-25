@@ -72,6 +72,7 @@ export const HeaderTop = styled.div`
 
 export const HeaderNav = styled.div`
     flex: 1;
+    will-change: height;
 `
 
 export const LogoContainer = styled.div`
