@@ -94,6 +94,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                             <Language>Golang</Language>
                             <Language>SQL</Language>
                             <Language>Haskell</Language>
+                            <Language>OCaml</Language>
                             <Language>Ruby</Language>
                             <Language>Bash</Language>
                             <Language>Mips Assembly</Language>
