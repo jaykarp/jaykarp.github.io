@@ -36,11 +36,10 @@ const About = (props: Props) => {
                             research and prototyping to system implementation
                             and design. When I’m not programming, you can find
                             me playing saxophone and piano or baking fresh
-                            bread. I’m currently looking for internship
-                            positions for summer 2021. Check out some of my
-                            projects below - including the website itself! And
-                            please contact me with any questions or
-                            opportunities.
+                            bread. I’m currently looking for job opportunities
+                            for 2022. Check out some of my projects below - including 
+                            the website itself! And please contact me with any 
+                            questions or opportunities.
                         </AboutText>
                     </TextContainer>
                 </AboutContainer>

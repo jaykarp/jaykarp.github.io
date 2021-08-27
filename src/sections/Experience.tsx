@@ -69,7 +69,7 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         title={'apple.'}
                         logo={apple}
                         description={
-                            'During my time at Apple I worked on buildling tooling for the Customer Feedback Engineering team. I created custom designs for different user interfaces by following an iterative design process which consisted of talking to users and creating both paper prototypes and wireframes. After completing the design process, I developed the designs into a fullstack application using a Ruby on Rails backend along with the GraphQL Ruby gem. I then used an Apollo middleware to fetch data from the backend. Finally, I built the frontend application based on my previous designs using SwiftUI as well as specialized AppKit views.'
+                            'During my time at Apple I built tooling for the Customer Feedback Engineering team. I created custom designs for different user interfaces by following an iterative design process which consisted of talking to users and creating both paper prototypes and wireframes. After completing the design process, I developed the designs into a fullstack application using a Ruby on Rails backend with the GraphQL Ruby gem. I then used an Apollo middleware to fetch data from the backend. Finally, I built the frontend application based on my previous designs concepts using SwiftUI as well as specialized AppKit views.'
                         }
                         languages={['SWIFT', 'RAILS', 'SWIFTUI', 'APPKIT', 'UIKIT', 'GRAPHQL']}
                         tags={['UI & UX', 'Fullstack Dev']}
