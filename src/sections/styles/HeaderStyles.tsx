@@ -21,10 +21,10 @@ export const HamburgerContainer = styled.div`
 
 export const Filler = styled.div`
     ${({
-        theme: {
-            colors: { background },
-        },
-    }) => css`
+    theme: {
+        colors: { background },
+    },
+}) => css`
         background: ${background};
     `};
     width: 100%;
@@ -37,15 +37,15 @@ type ManagerProps = {
 
 export const WidthManager = styled.div<ManagerProps>`
     ${({
-        theme: {
-            colors: { background },
-        },
-        isTop,
-    }) => css`
+    theme: {
+        colors: { background },
+    },
+    isTop,
+}) => css`
         background: ${background};
         box-shadow: ${isTop
-            ? `0px 6px 6px ${background}`
-            : '0px 2px 2px rgba(0, 0, 0, 0.1)'};
+        ? `0px 6px 6px ${background}`
+        : '0px 2px 2px rgba(0, 0, 0, 0.1)'};
     `};
     width: 100%;
     display: flex;
@@ -89,14 +89,14 @@ export const SmallItemContainer = styled.div`
         display: flex;
         width: 100%;
         background: ${({
-            theme: {
-                colors: { background },
-            },
-        }) => background};
+    theme: {
+        colors: { background },
+    },
+}) => background};
     }
 `
 
-export const ItemContainer = styled.div`
+export const ItemContainer = styled.nav`
     display: flex;
     justify-content: flex-end;
     flex: 1;

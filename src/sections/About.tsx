@@ -11,7 +11,7 @@ import {
 import cloud from '../assets/wordcloud_square.png'
 import Shape from '../components/Shape'
 
-interface Props {}
+interface Props { }
 
 const About = (props: Props) => {
     return (
@@ -26,7 +26,7 @@ const About = (props: Props) => {
                         left={'30%'}
                     />
                     <CloudContainer>
-                        <CloudImg src={cloud} />
+                        <CloudImg src={cloud} alt={'Word cloud about current interest, topics include: languages, systems, frameworks, etc.'} />
                     </CloudContainer>
                     <TextContainer>
                         <AboutText>

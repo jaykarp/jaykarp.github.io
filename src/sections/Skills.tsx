@@ -1,5 +1,5 @@
-import React, { forwardRef } from 'react'
-import Shape from '../components/Shape'
+import React, { forwardRef } from "react";
+import Shape from "../components/Shape";
 import {
     WidthManager,
     SkillsContainer,
@@ -22,8 +22,8 @@ import {
     TechnologiesLeft,
     TechnologiesRight,
     Technology,
-    LRContainer,
-} from './styles/SkillsStyles'
+    LRContainer
+} from "./styles/SkillsStyles";
 
 const Skills = forwardRef<HTMLDivElement>((_, ref) => {
     return (
@@ -37,18 +37,18 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                     left={'-28%'}
                 /> */}
                 <Shape
-                    shape={'square'}
-                    size={'6rem'}
-                    rotation={'250deg'}
-                    top={'12%'}
-                    left={'20%'}
+                    shape={"square"}
+                    size={"6rem"}
+                    rotation={"250deg"}
+                    top={"12%"}
+                    left={"20%"}
                 />
                 <Shape
-                    shape={'circle'}
-                    size={'4rem'}
-                    rotation={'20deg'}
-                    top={'35%'}
-                    left={'-10%'}
+                    shape={"circle"}
+                    size={"4rem"}
+                    rotation={"20deg"}
+                    top={"35%"}
+                    left={"-10%"}
                 />
                 {/* <Shape
                     shape={'circle'}
@@ -58,25 +58,25 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                     left={'20%'}
                 /> */}
                 <Shape
-                    shape={'triangle'}
-                    size={'3rem'}
-                    rotation={'10deg'}
-                    top={'55%'}
-                    left={'2%'}
+                    shape={"triangle"}
+                    size={"3rem"}
+                    rotation={"10deg"}
+                    top={"55%"}
+                    left={"2%"}
                 />
                 <Shape
-                    shape={'pentagon'}
-                    size={'6rem'}
-                    rotation={'165deg'}
-                    top={'75%'}
-                    left={'-20%'}
+                    shape={"pentagon"}
+                    size={"6rem"}
+                    rotation={"165deg"}
+                    top={"75%"}
+                    left={"-20%"}
                 />
                 <Shape
-                    shape={'hexagon'}
-                    size={'5rem'}
-                    rotation={'207deg'}
-                    top={'80%'}
-                    left={'20%'}
+                    shape={"hexagon"}
+                    size={"5rem"}
+                    rotation={"207deg"}
+                    top={"80%"}
+                    left={"20%"}
                 />
                 <SkillsGrid>
                     <GridHeader>
@@ -89,6 +89,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                             <Language>HTML & CSS</Language>
                             <Language>C & C++</Language>
                             <Language>C#</Language>
+                            <Language>Swift</Language>
                             <Language>Java</Language>
                             <Language>Golang</Language>
                             <Language>SQL</Language>
@@ -114,8 +115,11 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                                     <Framework>GraphQL</Framework>
                                     <Framework>Bootstrap</Framework>
                                     <Framework>JQuery</Framework>
+                                    <Framework>Apollo</Framework>
                                 </FrameworksLeft>
                                 <FrameworksRight>
+                                    <Framework>SwiftUI</Framework>
+                                    <Framework>AppKit & UIKit</Framework>
                                     <Framework>Django</Framework>
                                     <Framework>NumPy</Framework>
                                     <Framework>Selenium</Framework>
@@ -162,7 +166,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                 </SkillsGrid>
             </SkillsContainer>
         </WidthManager>
-    )
-})
+    );
+});
 
-export default Skills
+export default Skills;

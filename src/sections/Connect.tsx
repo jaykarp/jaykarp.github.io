@@ -14,7 +14,7 @@ import {
 } from './styles/ConnectStyles'
 import { WidthManager } from './styles/ConnectStyles'
 
-interface Props {}
+interface Props { }
 
 const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
     useEffect(() => {
@@ -53,13 +53,17 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
                 <ConnectHeader> Connect </ConnectHeader>
                 <ContentContainer>
                     <LinksContainer>
-                        <LinkContainer href={''} data-gen={'email'}>
+                        <LinkContainer
+                            href={'#'}
+                            target={'_blank'}
+                            rel={'noreferrer noopener'}
+                            data-gen={'email'}>
                             <Arrow indent={'0rem'}>&rarr;&nbsp;</Arrow>
                             <Link color={'#456268'}>email.</Link>
                         </LinkContainer>
                         <LinkContainer
                             href={'https://www.linkedin.com/in/jaykarp/'}
-                            target={'_black'}
+                            target={'_blank'}
                             rel={'noreferrer noopener'}
                         >
                             <Arrow indent={'1.5rem'}>&rarr;&nbsp;</Arrow>
@@ -67,15 +71,15 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         </LinkContainer>
                         <LinkContainer
                             href={'https://www.github.com/jaykarp'}
-                            target={'_black'}
+                            target={'_blank'}
                             rel={'noreferrer noopener'}
                         >
                             <Arrow indent={'3rem'}>&rarr;&nbsp;</Arrow>
                             <Link color={'#D0E8F2'}>github.</Link>
                         </LinkContainer>
                         <LinkContainer
-                            href={''}
-                            target={'_black'}
+                            href={'#'}
+                            target={'_blank'}
                             rel={'noreferrer noopener'}
                         >
                             <Arrow indent={'4.5rem'}>&rarr;&nbsp;</Arrow>
@@ -83,7 +87,7 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         </LinkContainer>
                     </LinksContainer>
                     <HeadshotContainer>
-                        <Headshot src={hs}></Headshot>
+                        <Headshot src={hs} alt={'Jays headshot'}></Headshot>
                     </HeadshotContainer>
                 </ContentContainer>
             </ConnectContainer>

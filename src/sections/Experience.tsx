@@ -4,6 +4,7 @@ import ceal from '../assets/ceal.png'
 import navstick from '../assets/navstick.svg'
 import cheddar from '../assets/cheddar.svg'
 import vanderbilt from '../assets/vanderbilt.png'
+import apple from '../assets/apple.png'
 
 import {
     WidthManager,
@@ -13,7 +14,7 @@ import {
 } from './styles/ExperienceStyles'
 import Shape from '../components/Shape'
 
-interface Props {}
+interface Props { }
 
 const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
     return (
@@ -65,6 +66,18 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                     />
                     <ExperienceHeader>Experience</ExperienceHeader>
                     <Job
+                        title={'apple.'}
+                        logo={apple}
+                        description={
+                            'During my time at Apple I worked on buildling tooling for the Customer Feedback Engineering team. I created custom designs for different user interfaces by following an iterative design process which consisted of talking to users and creating both paper prototypes and wireframes. After completing the design process, I developed the designs into a fullstack application using a Ruby on Rails backend along with the GraphQL Ruby gem. I then used an Apollo middleware to fetch data from the backend. Finally, I built the frontend application based on my previous designs using SwiftUI as well as specialized AppKit views.'
+                        }
+                        languages={['SWIFT', 'RAILS', 'SWIFTUI', 'APPKIT', 'UIKIT', 'GRAPHQL']}
+                        tags={['UI & UX', 'Fullstack Dev']}
+                        width={'65%'}
+                        img_alt={'Apple Logo'}
+                        left
+                    />
+                    <Job
                         title={'ceal.'}
                         logo={ceal}
                         description={
@@ -72,7 +85,8 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         }
                         languages={['HTML', 'CSS', 'JAVASCRIPT', 'PYTHON']}
                         tags={['UI & UX', 'Fullstack Dev']}
-                        left
+                        img_alt={'CEAL Lab Logo'}
+                        right
                     />
                     <Job
                         title={'navstick.'}
@@ -90,7 +104,8 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         ]}
                         tags={['UI & UX', 'Fullstack Dev']}
                         width={'60%'}
-                        right
+                        img_alt={'Navstick Project Logo'}
+                        left
                     />
                     <Job
                         title={'cheddar.'}
@@ -101,7 +116,8 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         languages={['REACT', 'GOLANG', 'RUBY']}
                         tags={['UI & UX', 'Fullstack Dev', 'DevOps']}
                         width={'75%'}
-                        left
+                        img_alt={'Cheddar Inc Logo'}
+                        right
                     />
                     <Job
                         title={'vanderbilt.'}
@@ -112,7 +128,8 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         languages={['JAVASCRIPT', 'JAVA', 'PYTHON']}
                         tags={['NLP', 'Statistics', 'UI & UX']}
                         width={'75%'}
-                        right
+                        img_alt={'Vanderbilt Logo'}
+                        left
                     />
                 </ExperienceContainer>
             </WidthManager>

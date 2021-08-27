@@ -11,7 +11,7 @@ import {
 import Shape from '../components/Shape'
 import cartoon from '../assets/cartoon_jay.png'
 
-interface Props {}
+interface Props { }
 
 const Intro = (props: Props) => {
     return (
@@ -47,7 +47,7 @@ const Intro = (props: Props) => {
                     <IntroTextAccent>&nbsp;Jay.</IntroTextAccent>
                 </IntroTextContainer>
                 <IntroImgContainer>
-                    <IntroImg src={cartoon} />
+                    <IntroImg src={cartoon} alt={'Cartoon drawing of Jay at his desk, drawn by Jay'} />
                 </IntroImgContainer>
             </IntroContainer>
         </WidthManager>

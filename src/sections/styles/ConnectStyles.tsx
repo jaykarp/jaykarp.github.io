@@ -2,10 +2,10 @@ import styled, { css } from 'styled-components/macro'
 
 export const WidthManager = styled.div`
     background: ${({
-        theme: {
-            colors: { background },
-        },
-    }) => background};
+    theme: {
+        colors: { background },
+    },
+}) => background};
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,16 +23,16 @@ export const ConnectContainer = styled.div`
     }
 `
 
-export const ConnectHeader = styled.div`
+export const ConnectHeader = styled.header`
     ${({
-        theme: {
-            colors: { black },
-            fonts: {
-                large,
-                header: { family },
-            },
+    theme: {
+        colors: { black },
+        fonts: {
+            large,
+            header: { family },
         },
-    }) => `
+    },
+}) => `
         color: ${black};
         font-size: ${large};
         font-family: ${family};
@@ -62,14 +62,14 @@ export const LinksContainer = styled.div`
 
 export const LinkContainer = styled.a`
     ${({
-        theme: {
-            colors: { black },
-            fonts: {
-                small,
-                body: { family },
-            },
+    theme: {
+        colors: { black },
+        fonts: {
+            small,
+            body: { family },
         },
-    }) => css`
+    },
+}) => css`
         color: ${black};
         font-size: ${small};
         font-family: ${family};

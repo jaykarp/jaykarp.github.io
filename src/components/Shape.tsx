@@ -37,6 +37,7 @@ const Shape = ({
                     left={left}
                     xtop={xtop}
                     xleft={xleft}
+                    alt={''}
                 />
             )
         case 'triangle':
@@ -49,6 +50,7 @@ const Shape = ({
                     left={left}
                     xtop={xtop}
                     xleft={xleft}
+                    alt={''}
                 />
             )
         case 'pentagon':
@@ -61,6 +63,7 @@ const Shape = ({
                     left={left}
                     xtop={xtop}
                     xleft={xleft}
+                    alt={''}
                 />
             )
         case 'hexagon':
@@ -73,6 +76,7 @@ const Shape = ({
                     left={left}
                     xtop={xtop}
                     xleft={xleft}
+                    alt={''}
                 />
             )
         default:
@@ -85,6 +89,7 @@ const Shape = ({
                     left={left}
                     xtop={xtop}
                     xleft={xleft}
+                    alt={''}
                 />
             )
     }

@@ -2,10 +2,10 @@ import styled from 'styled-components/macro'
 
 export const WidthManager = styled.div`
     background: ${({
-        theme: {
-            colors: { background },
-        },
-    }) => background};
+    theme: {
+        colors: { background },
+    },
+}) => background};
     width: 100%;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ export const CloudContainer = styled.div`
     }
 `
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,14 +45,14 @@ export const TextContainer = styled.div`
 
 export const AboutText = styled.div`
     ${({
-        theme: {
-            colors: { black },
-            fonts: {
-                small,
-                body: { family },
-            },
+    theme: {
+        colors: { black },
+        fonts: {
+            small,
+            body: { family },
         },
-    }) => `
+    },
+}) => `
         color: ${black};
         font-size: ${small};
         font-family: ${family};
@@ -72,10 +72,10 @@ export const CloudImg = styled.img`
 
 export const AboutSpacer = styled.div`
     ${({
-        theme: {
-            colors: { background },
-        },
-    }) => `
+    theme: {
+        colors: { background },
+    },
+}) => `
         background: ${background};
         
     `}

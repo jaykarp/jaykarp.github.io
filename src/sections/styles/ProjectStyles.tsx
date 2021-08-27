@@ -47,15 +47,15 @@ export const ProjectCardContainer = styled.div`
     }
 `
 
-export const ProjectsHeader = styled.div`
+export const ProjectsHeader = styled.header`
     ${({
-        theme: {
-            fonts: {
-                header: { family },
-                large,
-            },
+    theme: {
+        fonts: {
+            header: { family },
+            large,
         },
-    }) => `
+    },
+}) => `
         font-family: ${family};
         font-size: ${large};
     `}
@@ -71,10 +71,10 @@ export const CollapseContainer = styled.div`
 
 export const ProjectSpacer = styled.div`
     ${({
-        theme: {
-            colors: { white },
-        },
-    }) => `
+    theme: {
+        colors: { white },
+    },
+}) => `
         background: ${white}; 
     `}
     z-index: 1;

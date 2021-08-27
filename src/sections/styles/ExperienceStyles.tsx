@@ -2,10 +2,10 @@ import styled from 'styled-components/macro'
 
 export const WidthManager = styled.div`
     background: ${({
-        theme: {
-            colors: { background },
-        },
-    }) => background};
+    theme: {
+        colors: { background },
+    },
+}) => background};
     width: 125%;
     display: flex;
     justify-content: center;
@@ -15,10 +15,10 @@ export const WidthManager = styled.div`
 
 export const ExperienceContainer = styled.div`
     ${({
-        theme: {
-            colors: { background },
-        },
-    }) => `
+    theme: {
+        colors: { background },
+    },
+}) => `
         // background: ${background};
     `}
     display: flex;
@@ -32,15 +32,15 @@ export const ExperienceContainer = styled.div`
     }
 `
 
-export const ExperienceHeader = styled.div`
+export const ExperienceHeader = styled.header`
     ${({
-        theme: {
-            fonts: {
-                header: { family },
-                large,
-            },
+    theme: {
+        fonts: {
+            header: { family },
+            large,
         },
-    }) => `
+    },
+}) => `
         font-family: ${family};
         font-size: ${large};
     `}
@@ -49,10 +49,10 @@ export const ExperienceHeader = styled.div`
 
 export const ExperienceSpacer = styled.div`
     ${({
-        theme: {
-            colors: { white },
-        },
-    }) => `
+    theme: {
+        colors: { white },
+    },
+}) => `
         background: ${white}; 
     `}
     z-index: 0;

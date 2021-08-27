@@ -21,6 +21,7 @@ interface Props {
     left?: boolean
     right?: boolean
     width?: string
+    img_alt: string
 }
 
 interface TagProps {
@@ -36,6 +37,7 @@ const Job = ({
     left = true,
     right = false,
     width = '100%',
+    img_alt = "",
 }: Props) => {
     const isLeft = left && !right ? true : false
 
@@ -53,7 +55,7 @@ const Job = ({
         <JobContainer isLeft={isLeft}>
             <JobImgContainer isLeft={isLeft}>
                 <JobImgBackground isLeft={isLeft}>
-                    <JobImg src={logo} width={width} />
+                    <JobImg src={logo} width={width} alt={img_alt} />
                 </JobImgBackground>
             </JobImgContainer>
             <JobDescriptionContainer isLeft={isLeft}>

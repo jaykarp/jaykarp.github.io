@@ -2,10 +2,10 @@ import styled from 'styled-components/macro'
 
 export const WidthManager = styled.div`
     background: ${({
-        theme: {
-            colors: { background },
-        },
-    }) => background};
+    theme: {
+        colors: { background },
+    },
+}) => background};
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ export const IntroContainer = styled.div`
     }
 `
 
-export const IntroTextContainer = styled.div`
+export const IntroTextContainer = styled.header`
     display: flex;
     flex: 1;
     align-items: center;
@@ -60,14 +60,14 @@ export const IntroImg = styled.img`
 
 export const IntroText = styled.div`
     ${({
-        theme: {
-            colors: { black },
-            fonts: {
-                large,
-                header: { family },
-            },
+    theme: {
+        colors: { black },
+        fonts: {
+            large,
+            header: { family },
         },
-    }) => `
+    },
+}) => `
         color: ${black};
         font-size: ${large};
         font-family: ${family};
@@ -78,16 +78,16 @@ export const IntroText = styled.div`
 
 export const IntroTextAccent = styled.div`
     ${({
-        theme: {
-            fonts: {
-                large,
-                header: { family },
-            },
+    theme: {
+        fonts: {
+            large,
+            header: { family },
         },
-        theme: {
-            colors: { accent },
-        },
-    }) => `
+    },
+    theme: {
+        colors: { accent },
+    },
+}) => `
         color: ${accent};
         font-size: ${large};
         font-family: ${family}; 
