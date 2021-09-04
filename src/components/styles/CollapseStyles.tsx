@@ -2,17 +2,12 @@ import styled from 'styled-components/macro'
 import { Collapse as _Collapse } from 'react-collapse'
 
 export const CollapseContainer = styled.div`
-    ${({
-        theme: {
-            colors: { light, background },
-            boxShadow,
-        },
-    }) => `
-        background: ${background};
-        border: 1px solid ${light};
-        border-radius: 0 0 5px 5px;
+    ${({ theme: { boxShadow } }) => `
         box-shadow: ${boxShadow};
     `}
+    border-radius: 0 0 5px 5px;
+    background: var(--background-color);
+    border: 1px solid var(--light-color);
     display: grid;
     width: 75vw;
     max-width: 1000px;
@@ -37,9 +32,9 @@ export const HeaderContainer = styled.div`
         theme: {
             fonts: {
                 body: { family },
-                medium,
-            },
-        },
+                medium
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: calc(${medium} - 0.5rem);
@@ -55,14 +50,13 @@ export const CollapseClose = styled.div`
     ${({
         theme: {
             fonts: {
-                body: { family },
-            },
-            colors: { dark },
-        },
+                body: { family }
+            }
+        }
     }) => `
-        color: ${dark};
         font-family: ${family};
     `}
+    color: var(--dark-color);
     cursor: pointer;
 `
 
@@ -77,9 +71,9 @@ export const CollapseDescription = styled.div`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
-            },
-        },
+                xsmall
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: ${xsmall};
@@ -92,15 +86,14 @@ export const LanguagesContainer = styled.div`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
-            },
-            colors: { accent },
-        },
+                xsmall
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: calc(${xsmall} - 0.2rem);
-        color: ${accent};
     `}
+    color: var(--accent-color);
     display: flex;
     font-weight: bold;
     margin-top: 1rem;

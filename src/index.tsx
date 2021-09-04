@@ -1,9 +1,9 @@
-import React from "react";
-import { hydrate, render } from "react-dom";
-import App from "./App";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import React from 'react';
+import { hydrate, render } from 'react-dom';
+import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 if (rootElement != null && rootElement.hasChildNodes()) {
     hydrate(<App />, rootElement);
 } else {
@@ -11,8 +11,9 @@ if (rootElement != null && rootElement.hasChildNodes()) {
         <React.StrictMode>
             <App />
         </React.StrictMode>,
-        document.getElementById("root")
+        document.getElementById('root')
     );
 }
 // Call Service Worker
-serviceWorkerRegistration.register()
+serviceWorkerRegistration.register();
+

@@ -1,17 +1,11 @@
 import styled, { css } from 'styled-components/macro'
 
 export const Card = styled.div`
-    ${({
-        theme: {
-            colors: { background },
-            borderRadius,
-            boxShadow,
-        },
-    }) => `
-        background: ${background};
+    ${({ theme: { borderRadius, boxShadow } }) => `
         border-radius: ${borderRadius};
         box-shadow: ${boxShadow};
     `}
+    background: var(--background-color);
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -32,9 +26,9 @@ export const CardHeader = styled.div`
         theme: {
             fonts: {
                 body: { family },
-                medium,
-            },
-        },
+                medium
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: calc(${medium} - 0.5rem);
@@ -49,9 +43,9 @@ export const CardDescription = styled.div`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
-            },
-        },
+                xsmall
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: ${xsmall};
@@ -74,11 +68,11 @@ export const CardTag = styled.div<CardProps>`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
+                xsmall
             },
-            borderRadiusSmall,
+            borderRadiusSmall
         },
-        color,
+        color
     }) => css`
         font-family: ${family};
         font-size: calc(${xsmall} - 0.2rem);
@@ -98,9 +92,9 @@ export const MoreContainer = styled.div`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
-            },
-        },
+                xsmall
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: ${xsmall};
@@ -121,10 +115,10 @@ export const More = styled.div<CardProps>`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
-            },
+                xsmall
+            }
         },
-        color,
+        color
     }) => `
         font-family: ${family};
         font-size: ${xsmall};

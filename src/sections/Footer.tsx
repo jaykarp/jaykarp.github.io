@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { memo } from 'react'
 import {
     FooterContainer,
     FooterText,
     FooterTextSmall,
-    WidthManager,
-} from './styles/FooterStyles.'
+    WidthManager
+} from './styles/FooterStyles'
 
 interface Props {}
 
@@ -19,4 +19,4 @@ const Footer = (props: Props) => {
     )
 }
 
-export default Footer
+export default memo(Footer)

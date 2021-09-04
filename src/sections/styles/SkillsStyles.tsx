@@ -1,11 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const WidthManager = styled.div`
-    background: ${({
-    theme: {
-        colors: { white },
-    },
-}) => white};
+    background: var(--white-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -46,13 +42,13 @@ export const GridHeader = styled.div`
 
 export const Header = styled.header`
     ${({
-    theme: {
-        fonts: {
-            header: { family },
-            large,
-        },
-    },
-}) => `
+        theme: {
+            fonts: {
+                header: { family },
+                large
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${large};
     `}
@@ -76,17 +72,11 @@ export const GridLanguages = styled.div`
 `
 
 export const LanguagesContainer = styled.div`
-    ${({
-    theme: {
-        boxShadow,
-        borderRadius,
-        colors: { background },
-    },
-}) => `
+    ${({ theme: { boxShadow, borderRadius } }) => `
         box-shadow ${boxShadow};
         border-radius: ${borderRadius};
-        background: ${background};
     `}
+    background: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,13 +86,13 @@ export const LanguagesContainer = styled.div`
 
 export const LanguagesHeader = styled.div`
     ${({
-    theme: {
-        fonts: {
-            header: { family },
-            small,
-        },
-    },
-}) => `
+        theme: {
+            fonts: {
+                header: { family },
+                small
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${small};
     `}
@@ -111,13 +101,13 @@ export const LanguagesHeader = styled.div`
 
 export const Language = styled.div`
     ${({
-    theme: {
-        fonts: {
-            body: { family },
-            xsmall,
-        },
-    },
-}) => `
+        theme: {
+            fonts: {
+                body: { family },
+                xsmall
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${xsmall};
     `}
@@ -136,17 +126,11 @@ export const GridFrameworks = styled.div`
 `
 
 export const FrameworksContainer = styled.div`
-    ${({
-    theme: {
-        boxShadow,
-        borderRadius,
-        colors: { medium },
-    },
-}) => `
+    ${({ theme: { boxShadow, borderRadius } }) => `
         box-shadow ${boxShadow};
         border-radius: ${borderRadius};
-        background: ${medium};
     `}
+    background: var(--medium-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,35 +172,34 @@ export const FrameworksRight = styled.div`
 
 export const FrameworksHeader = styled.div`
     ${({
-    theme: {
-        fonts: {
-            header: { family },
-            small,
-        },
-        colors: { white },
-    },
-}) => `
+        theme: {
+            fonts: {
+                header: { family },
+                small
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${small};
-        color: ${white};
     `}
+    color: var(--white-color);
     padding-bottom: 5px;
 `
 
 export const Framework = styled.div`
     ${({
-    theme: {
-        fonts: {
-            body: { family },
-            xsmall,
-        },
-        colors: { white },
-    },
-}) => `
+        theme: {
+            fonts: {
+                body: { family },
+                xsmall
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${xsmall};
-        color: ${white};
+
     `}
+    color: var(--white-color);
 `
 
 export const GridTechnologies = styled.div`
@@ -231,15 +214,10 @@ export const GridTechnologies = styled.div`
     }
 `
 export const TechnologiesContainer = styled.div`
-    ${({
-    theme: {
-        borderRadius,
-        colors: { white },
-    },
-}) => `
+    ${({ theme: { borderRadius } }) => `
         border-radius: ${borderRadius};
-        background: ${white};
     `}
+    background: var(--white-color);
     margin-top: 20px;
     margin-left: 20px;
     border: 1px solid black;
@@ -269,33 +247,32 @@ export const TechnologiesRight = styled.div`
 
 export const TechnologiesHeader = styled.div`
     ${({
-    theme: {
-        fonts: {
-            header: { family },
-            small,
-        },
-        colors: { black },
-    },
-}) => `
+        theme: {
+            fonts: {
+                header: { family },
+                small
+            },
+            colors: { black }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${small};
-        color: ${black};
     `}
-    padding-bottom: 5px
+    color: var(--black-color);
+    padding-bottom: 5px;
 `
 
 export const Technology = styled.div`
     ${({
-    theme: {
-        fonts: {
-            body: { family },
-            xsmall,
-        },
-        colors: { black },
-    },
-}) => `
+        theme: {
+            fonts: {
+                body: { family },
+                xsmall
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${xsmall};
-        color: ${black};
     `}
+    color: var(--black-color);
 `

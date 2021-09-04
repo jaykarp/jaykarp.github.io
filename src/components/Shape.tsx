@@ -17,82 +17,76 @@ interface Props {
     xleft?: string
 }
 
-const Shape = ({
-    shape,
-    size,
-    rotation,
-    top,
-    left,
-    xtop = top,
-    xleft = left,
-}: Props) => {
-    switch (shape) {
-        case 'square':
-            return (
-                <StyledShape
-                    src={square}
-                    rotation={rotation}
-                    size={size}
-                    top={top}
-                    left={left}
-                    xtop={xtop}
-                    xleft={xleft}
-                    alt={''}
-                />
-            )
-        case 'triangle':
-            return (
-                <StyledShape
-                    src={triangle}
-                    rotation={rotation}
-                    size={size}
-                    top={top}
-                    left={left}
-                    xtop={xtop}
-                    xleft={xleft}
-                    alt={''}
-                />
-            )
-        case 'pentagon':
-            return (
-                <StyledShape
-                    src={pentagon}
-                    rotation={rotation}
-                    size={size}
-                    top={top}
-                    left={left}
-                    xtop={xtop}
-                    xleft={xleft}
-                    alt={''}
-                />
-            )
-        case 'hexagon':
-            return (
-                <StyledShape
-                    src={hexagon}
-                    rotation={rotation}
-                    size={size}
-                    top={top}
-                    left={left}
-                    xtop={xtop}
-                    xleft={xleft}
-                    alt={''}
-                />
-            )
-        default:
-            return (
-                <StyledShape
-                    src={circle}
-                    rotation={rotation}
-                    size={size}
-                    top={top}
-                    left={left}
-                    xtop={xtop}
-                    xleft={xleft}
-                    alt={''}
-                />
-            )
+const Shape = memo(
+    ({ shape, size, rotation, top, left, xtop = top, xleft = left }: Props) => {
+        switch (shape) {
+            case 'square':
+                return (
+                    <StyledShape
+                        src={square}
+                        rotation={rotation}
+                        size={size}
+                        top={top}
+                        left={left}
+                        xtop={xtop}
+                        xleft={xleft}
+                        alt={''}
+                    />
+                )
+            case 'triangle':
+                return (
+                    <StyledShape
+                        src={triangle}
+                        rotation={rotation}
+                        size={size}
+                        top={top}
+                        left={left}
+                        xtop={xtop}
+                        xleft={xleft}
+                        alt={''}
+                    />
+                )
+            case 'pentagon':
+                return (
+                    <StyledShape
+                        src={pentagon}
+                        rotation={rotation}
+                        size={size}
+                        top={top}
+                        left={left}
+                        xtop={xtop}
+                        xleft={xleft}
+                        alt={''}
+                    />
+                )
+            case 'hexagon':
+                return (
+                    <StyledShape
+                        src={hexagon}
+                        rotation={rotation}
+                        size={size}
+                        top={top}
+                        left={left}
+                        xtop={xtop}
+                        xleft={xleft}
+                        alt={''}
+                    />
+                )
+            default:
+                return (
+                    <StyledShape
+                        src={circle}
+                        rotation={rotation}
+                        size={size}
+                        top={top}
+                        left={left}
+                        xtop={xtop}
+                        xleft={xleft}
+                        alt={''}
+                    />
+                )
+        }
     }
-}
+)
 
 export default memo(Shape)

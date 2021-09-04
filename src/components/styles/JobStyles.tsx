@@ -24,9 +24,9 @@ export const JobHeader = styled.div<JobProps>`
         theme: {
             fonts: {
                 body: { family },
-                medium,
-            },
-        },
+                medium
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: ${medium};
@@ -50,14 +50,8 @@ export const JobImgContainer = styled.div<JobProps>`
 `
 
 export const JobImgBackground = styled.div<JobProps>`
-    ${({
-        theme: {
-            colors: { medium, dark },
-            borderRadius,
-        },
-        isLeft,
-    }) => `
-        background: ${isLeft ? medium : dark};
+    ${({ theme: { borderRadius }, isLeft }) => `
+        background: var(${isLeft ? '--medium-color' : '--dark-color'});
         border-radius: ${borderRadius};
     `}
     display: flex;
@@ -93,10 +87,9 @@ export const JobDescription = styled.div`
     ${({
         theme: {
             fonts: {
-                body: { family },
-                small,
-            },
-        },
+                body: { family }
+            }
+        }
     }) => css`
         font-family: ${family};
     `}
@@ -113,9 +106,9 @@ export const JobLanguages = styled.div<JobProps>`
         theme: {
             fonts: {
                 body: { family },
-                xsmall,
-            },
-        },
+                xsmall
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: ${xsmall};
@@ -131,18 +124,17 @@ export const JobTagContainer = styled.div<JobProps>`
 export const JobTag = styled.div<JobProps>`
     ${({
         theme: {
-            colors: { medium, dark },
             fonts: {
                 body: { family },
-                xsmall,
+                xsmall
             },
-            borderRadiusSmall,
+            borderRadiusSmall
         },
-        isLeft,
+        isLeft
     }) => `
         font-family: ${family};
         font-size: ${xsmall};
-        background: ${isLeft ? medium : dark};
+        background: var(${isLeft ? '--medium-color' : '--dark-color'});
         margin: ${isLeft ? '0 0.3rem 0 0' : '0 0 0 0.3rem'};
         border-radius: ${borderRadiusSmall};
     `}}

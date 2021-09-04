@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef, useState } from 'react'
+import React, { forwardRef, memo, useRef, useState } from 'react'
 import Collapse from '../components/Collapse'
 import ProjectCard from '../components/ProjectCard'
 import Shape from '../components/Shape'
@@ -8,7 +8,7 @@ import {
     ProjectCardContainer,
     ProjectsContainer,
     ProjectsHeader,
-    ProjectSpacer,
+    ProjectSpacer
 } from './styles/ProjectStyles'
 
 interface Props {}
@@ -56,7 +56,7 @@ const Projects = forwardRef<HTMLDivElement>((props: Props, ref) => {
     const [open, setOpen] = useState([false, false, false])
     const collapseRef = useRef(document.createElement('div'))
     const checkOpen = (idx: number) => {
-        setOpen((open) => open.map((o, i) => i === idx))
+        setOpen(open => open.map((o, i) => i === idx))
     }
 
     const handleClick = (idx: number) => {
@@ -159,4 +159,4 @@ const Projects = forwardRef<HTMLDivElement>((props: Props, ref) => {
     )
 })
 
-export default Projects
+export default memo(Projects)

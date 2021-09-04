@@ -1,5 +1,5 @@
-import React, { forwardRef } from "react";
-import Shape from "../components/Shape";
+import React, { forwardRef, memo } from 'react'
+import Shape from '../components/Shape'
 import {
     WidthManager,
     SkillsContainer,
@@ -23,7 +23,7 @@ import {
     TechnologiesRight,
     Technology,
     LRContainer
-} from "./styles/SkillsStyles";
+} from './styles/SkillsStyles'
 
 const Skills = forwardRef<HTMLDivElement>((_, ref) => {
     return (
@@ -37,18 +37,18 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                     left={'-28%'}
                 /> */}
                 <Shape
-                    shape={"square"}
-                    size={"6rem"}
-                    rotation={"250deg"}
-                    top={"12%"}
-                    left={"20%"}
+                    shape={'square'}
+                    size={'6rem'}
+                    rotation={'250deg'}
+                    top={'12%'}
+                    left={'20%'}
                 />
                 <Shape
-                    shape={"circle"}
-                    size={"4rem"}
-                    rotation={"20deg"}
-                    top={"35%"}
-                    left={"-10%"}
+                    shape={'circle'}
+                    size={'4rem'}
+                    rotation={'20deg'}
+                    top={'35%'}
+                    left={'-10%'}
                 />
                 {/* <Shape
                     shape={'circle'}
@@ -58,25 +58,25 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                     left={'20%'}
                 /> */}
                 <Shape
-                    shape={"triangle"}
-                    size={"3rem"}
-                    rotation={"10deg"}
-                    top={"55%"}
-                    left={"2%"}
+                    shape={'triangle'}
+                    size={'3rem'}
+                    rotation={'10deg'}
+                    top={'55%'}
+                    left={'2%'}
                 />
                 <Shape
-                    shape={"pentagon"}
-                    size={"6rem"}
-                    rotation={"165deg"}
-                    top={"75%"}
-                    left={"-20%"}
+                    shape={'pentagon'}
+                    size={'6rem'}
+                    rotation={'165deg'}
+                    top={'75%'}
+                    left={'-20%'}
                 />
                 <Shape
-                    shape={"hexagon"}
-                    size={"5rem"}
-                    rotation={"207deg"}
-                    top={"80%"}
-                    left={"20%"}
+                    shape={'hexagon'}
+                    size={'5rem'}
+                    rotation={'207deg'}
+                    top={'80%'}
+                    left={'20%'}
                 />
                 <SkillsGrid>
                     <GridHeader>
@@ -167,7 +167,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                 </SkillsGrid>
             </SkillsContainer>
         </WidthManager>
-    );
-});
+    )
+})
 
-export default Skills;
+export default memo(Skills)

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import {
     HeaderContainer,
     LogoContainer,
@@ -8,12 +8,15 @@ import {
     Filler,
     Hamburger,
     HamburgerContainer,
+    DarkModeToggle,
     SmallItemContainer,
     HeaderTop,
-    HeaderNav,
+    HeaderNav
 } from './styles/HeaderStyles'
 import { Collapse } from 'react-collapse'
+import { ThemeToggle } from '../components/ThemeToggle'
 import './styles/HeaderStyles.css'
+import { Themes } from '../helpers/useDarkMode'
 
 interface Props {
     refs: {
@@ -22,6 +25,8 @@ interface Props {
         projectsRef: React.RefObject<HTMLDivElement>
         connectRef: React.RefObject<HTMLDivElement>
     }
+    theme: Themes
+    toggleTheme: () => void
 }
 
 const scrollToTargetAdjusted = (el: HTMLDivElement) => {
@@ -32,11 +37,11 @@ const scrollToTargetAdjusted = (el: HTMLDivElement) => {
 
     window.scrollTo({
         top: windowPosition + offsetPosition,
-        behavior: 'smooth',
+        behavior: 'smooth'
     })
 }
 
-const Header = ({ refs }: Props) => {
+const Header = ({ refs, theme, toggleTheme }: Props) => {
     const [isTop, setIsTop] = useState(true)
     const [open, setOpen] = useState(false)
 
@@ -78,6 +83,12 @@ const Header = ({ refs }: Props) => {
                             <HeaderItem>jay karp</HeaderItem>
                         </LogoContainer>
                         <HamburgerContainer>
+                            <DarkModeToggle>
+                                <ThemeToggle
+                                    theme={theme}
+                                    toggleTheme={toggleTheme}
+                                />
+                            </DarkModeToggle>
                             <Hamburger
                                 toggled={open}
                                 toggle={setOpen}
@@ -113,7 +124,7 @@ const Header = ({ refs }: Props) => {
                             isOpened={open}
                             theme={{
                                 collapse: 'headercollapse',
-                                content: 'headercontent',
+                                content: 'headercontent'
                             }}
                         >
                             <SmallItemContainer>
@@ -148,4 +159,4 @@ const Header = ({ refs }: Props) => {
     )
 }
 
-export default Header
+export default memo(Header)

@@ -1,11 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const WidthManager = styled.div`
-    background: ${({
-        theme: {
-            colors: { background },
-        },
-    }) => background};
+    background: var(--background-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,18 +10,17 @@ export const WidthManager = styled.div`
 export const FooterContainer = styled.div`
     ${({
         theme: {
-            colors: { dark, white },
             fonts: {
                 xsmall,
-                body: { family },
-            },
-        },
+                body: { family }
+            }
+        }
     }) => `
         font-family: ${family};
         font-size: ${xsmall};
-        background: ${dark};
-        color: ${white};
     `}
+    background: var(--dark-color);
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
     align-items: center;

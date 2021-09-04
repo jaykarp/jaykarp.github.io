@@ -7,6 +7,13 @@ export const Sections = styled.div`
     flex: 1;
 `
 
+export const DarkModeToggle = styled.div`
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+`
+
 export const Hamburger = styled(_Hamburger)``
 
 export const HamburgerContainer = styled.div`
@@ -20,13 +27,7 @@ export const HamburgerContainer = styled.div`
 `
 
 export const Filler = styled.div`
-    ${({
-    theme: {
-        colors: { background },
-    },
-}) => css`
-        background: ${background};
-    `};
+    background: var(--background-color);
     width: 100%;
     height: 4.2rem;
 `
@@ -36,17 +37,12 @@ type ManagerProps = {
 }
 
 export const WidthManager = styled.div<ManagerProps>`
-    ${({
-    theme: {
-        colors: { background },
-    },
-    isTop,
-}) => css`
-        background: ${background};
+    ${({ isTop }) => css`
         box-shadow: ${isTop
-        ? `0px 6px 6px ${background}`
-        : '0px 2px 2px rgba(0, 0, 0, 0.1)'};
+            ? `0px 6px 6px var(--background-color);`
+            : '0px 2px 2px rgba(0, 0, 0, 0.1)'};
     `};
+    background: var(--background-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,11 +84,7 @@ export const SmallItemContainer = styled.div`
     @media (max-width: 800px) {
         display: flex;
         width: 100%;
-        background: ${({
-    theme: {
-        colors: { background },
-    },
-}) => background};
+        background: var(--background-color);
     }
 `
 
@@ -108,7 +100,7 @@ export const HeaderItem = styled.div`
     ${({ theme: { fonts } }) => css`
         font-family: ${fonts.body.family};
         font-size: ${fonts.medium};
-        padding: 10px;
     `}
+    padding: 10px;
     cursor: pointer;
 `

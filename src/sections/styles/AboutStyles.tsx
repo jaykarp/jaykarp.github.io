@@ -1,11 +1,7 @@
-import styled from 'styled-components/macro'
+import styled, { css } from 'styled-components/macro'
 
 export const WidthManager = styled.div`
-    background: ${({
-    theme: {
-        colors: { background },
-    },
-}) => background};
+    background: var(--background-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,19 +41,18 @@ export const TextContainer = styled.main`
 
 export const AboutText = styled.div`
     ${({
-    theme: {
-        colors: { black },
-        fonts: {
-            small,
-            body: { family },
-        },
-    },
-}) => `
-        color: ${black};
+        theme: {
+            fonts: {
+                small,
+                body: { family }
+            }
+        }
+    }) => `
         font-size: ${small};
         font-family: ${family};
         
     `}
+    color: var(--black-color);
     text-align: justify;
     width: 75%;
     @media (max-width: 500px) {
@@ -71,14 +66,7 @@ export const CloudImg = styled.img`
 `
 
 export const AboutSpacer = styled.div`
-    ${({
-    theme: {
-        colors: { background },
-    },
-}) => `
-        background: ${background};
-        
-    `}
+    background: var(--background-color);
     width: 140%;
     height: 40rem;
     border-radius: 50% / 45%;

@@ -16,6 +16,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" media="screen">
   <title>Jay L Karp</title>
   <style>
+    html {
+        --background-color: #FFFAEE;
+        --light-color: #D0E8F2;
+        --medium-color: #79A3B1;
+        --dark-color: #456268;
+        --accent-color: #FF8A00;
+        --black-color: #000000;
+        --white-color: #FFFFFF;
+        scrollbar-width: none;
+        will-change: scroll-position;
+    }
+
+    [data-theme="dark"] {
+        --background-color: #FFFAEE;
+        --light-color: #D0E8F2;
+        --medium-color: #79A3B1;
+        --dark-color: #456268;
+        --accent-color: #FF8A00;
+        --black-color: #000000;
+        --white-color: #FFFFFF;
+    }
+
     body {
       overflow-x: hidden;
       margin: 0px;
@@ -25,11 +47,6 @@
 
     body::-webkit-scrollbar {
       display: none;
-    }
-
-    html {
-      scrollbar-width: none;
-      will-change: scroll-position;
     }
 
     #root {

@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect } from 'react'
+import React, { forwardRef, useEffect, memo } from 'react'
 import hs from '../assets/headshot2.svg'
 import Shape from '../components/Shape'
 import {
@@ -10,11 +10,11 @@ import {
     Arrow,
     Link,
     LinksContainer,
-    LinkContainer,
+    LinkContainer
 } from './styles/ConnectStyles'
 import { WidthManager } from './styles/ConnectStyles'
 
-interface Props { }
+interface Props {}
 
 const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
     useEffect(() => {
@@ -22,12 +22,12 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
         const links = document.querySelectorAll<HTMLElement>(
             `[data-gen='email']`
         )
-        links.forEach((l) => {
+        links.forEach(l => {
             l.onmouseover = l.ontouchstart = () =>
                 l.setAttribute('href', `mailto:${atob(email)}`)
         })
         return () => {
-            links.forEach((l) => {
+            links.forEach(l => {
                 l.onmouseover = l.ontouchstart = () => null
             })
         }
@@ -57,7 +57,8 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
                             href={'#'}
                             target={'_blank'}
                             rel={'noreferrer noopener'}
-                            data-gen={'email'}>
+                            data-gen={'email'}
+                        >
                             <Arrow indent={'0rem'}>&rarr;&nbsp;</Arrow>
                             <Link color={'#456268'}>email.</Link>
                         </LinkContainer>
@@ -95,4 +96,4 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
     )
 })
 
-export default Connect
+export default memo(Connect)

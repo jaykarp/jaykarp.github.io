@@ -28,27 +28,15 @@ export const CodeContainer = styled.div`
 `
 
 export const CodeHeader = styled.div`
-    ${({
-        theme: {
-            colors: { dark },
-        },
-    }) => `
-        border-radius: 1rem 1rem 0 0;
-        background: ${dark};
-    `}
+    border-radius: 1rem 1rem 0 0;
+    background: var(--dark-color);
     height: 30px;
     display: flex;
     align-items: center;
     padding-left: 15px;
 `
 export const Dot = styled.div`
-    ${({
-        theme: {
-            colors: { background },
-        },
-    }) => `
-        background: ${background};
-    `}
+    background: var(--background-color);
     height: 8px;
     width: 8px;
     border-radius: 100%;

@@ -1,11 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const WidthManager = styled.div`
-    background: ${({
-    theme: {
-        colors: { background },
-    },
-}) => background};
+    background: var(--background-color);
     width: 125%;
     display: flex;
     justify-content: center;
@@ -14,13 +10,6 @@ export const WidthManager = styled.div`
 `
 
 export const ExperienceContainer = styled.div`
-    ${({
-    theme: {
-        colors: { background },
-    },
-}) => `
-        // background: ${background};
-    `}
     display: flex;
     flex-direction: column;
     margin: 4rem 0;
@@ -34,13 +23,13 @@ export const ExperienceContainer = styled.div`
 
 export const ExperienceHeader = styled.header`
     ${({
-    theme: {
-        fonts: {
-            header: { family },
-            large,
-        },
-    },
-}) => `
+        theme: {
+            fonts: {
+                header: { family },
+                large
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${large};
     `}
@@ -48,13 +37,7 @@ export const ExperienceHeader = styled.header`
 `
 
 export const ExperienceSpacer = styled.div`
-    ${({
-    theme: {
-        colors: { white },
-    },
-}) => `
-        background: ${white}; 
-    `}
+    background: var(--white-color);
     z-index: 0;
     width: 120%;
     height: 30rem;

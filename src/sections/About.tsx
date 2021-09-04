@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import {
     AboutContainer,
     CloudContainer,
@@ -6,12 +6,12 @@ import {
     AboutText,
     CloudImg,
     WidthManager,
-    AboutSpacer,
+    AboutSpacer
 } from './styles/AboutStyles'
 import cloud from '../assets/wordcloud_square.png'
 import Shape from '../components/Shape'
 
-interface Props { }
+interface Props {}
 
 const About = (props: Props) => {
     return (
@@ -26,7 +26,12 @@ const About = (props: Props) => {
                         left={'30%'}
                     />
                     <CloudContainer>
-                        <CloudImg src={cloud} alt={'Word cloud about current interest, topics include: languages, systems, frameworks, etc.'} />
+                        <CloudImg
+                            src={cloud}
+                            alt={
+                                'Word cloud about current interest, topics include: languages, systems, frameworks, etc.'
+                            }
+                        />
                     </CloudContainer>
                     <TextContainer>
                         <AboutText>
@@ -37,9 +42,9 @@ const About = (props: Props) => {
                             and design. When I’m not programming, you can find
                             me playing saxophone and piano or baking fresh
                             bread. I’m currently looking for job opportunities
-                            for 2022. Check out some of my projects below - including 
-                            the website itself! And please contact me with any 
-                            questions or opportunities.
+                            for 2022. Check out some of my projects below -
+                            including the website itself! And please contact me
+                            with any questions or opportunities.
                         </AboutText>
                     </TextContainer>
                 </AboutContainer>
@@ -49,4 +54,4 @@ const About = (props: Props) => {
     )
 }
 
-export default About
+export default memo(About)

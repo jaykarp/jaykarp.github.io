@@ -1,11 +1,7 @@
 import styled, { css } from 'styled-components/macro'
 
 export const WidthManager = styled.div`
-    background: ${({
-    theme: {
-        colors: { background },
-    },
-}) => background};
+    background: var(--background-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,18 +21,17 @@ export const ConnectContainer = styled.div`
 
 export const ConnectHeader = styled.header`
     ${({
-    theme: {
-        colors: { black },
-        fonts: {
-            large,
-            header: { family },
-        },
-    },
-}) => `
-        color: ${black};
+        theme: {
+            fonts: {
+                large,
+                header: { family }
+            }
+        }
+    }) => `
         font-size: ${large};
         font-family: ${family};
     `}
+    color: var(--black-color);
     margin-left: 5rem;
     margin-bottom: 2rem;
     z-index: 100;
@@ -62,21 +57,20 @@ export const LinksContainer = styled.div`
 
 export const LinkContainer = styled.a`
     ${({
-    theme: {
-        colors: { black },
-        fonts: {
-            small,
-            body: { family },
-        },
-    },
-}) => css`
-        color: ${black};
+        theme: {
+            fonts: {
+                small,
+                body: { family }
+            }
+        }
+    }) => css`
         font-size: ${small};
         font-family: ${family};
         @media (max-width: 450px) {
             font-size: calc(${small} + 0.3rem);
         }
     `}
+    color: var(--black-color);
     display: flex;
     transition: all 0.2s;
     text-decoration: none;
@@ -99,6 +93,7 @@ type LinkProps = {
     color: string
 }
 
+// REFACTOR
 export const Link = styled.div<LinkProps>`
     ${({ color }) => `
         border-bottom: 3px solid ${color};

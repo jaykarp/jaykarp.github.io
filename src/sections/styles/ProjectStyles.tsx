@@ -29,19 +29,19 @@ export const ProjectCardContainer = styled.div`
     max-width: 1000px;
     @media (max-width: 1000px) {
         flex-direction: column;
-        ${CardContainer}:nth-child(odd) {
+        ${CardContainer}:nth-child (odd) {
             margin-right: 20%;
         }
-        ${CardContainer}:nth-child(even) {
+        ${CardContainer}:nth-child (even) {
             margin-left: 20%;
         }
     }
     @media (max-width: 500px) {
         flex-direction: column;
-        ${CardContainer}:nth-child(odd) {
+        ${CardContainer}:nth-child (odd) {
             margin-right: 10%;
         }
-        ${CardContainer}:nth-child(even) {
+        ${CardContainer}:nth-child (even) {
             margin-left: 10%;
         }
     }
@@ -49,13 +49,13 @@ export const ProjectCardContainer = styled.div`
 
 export const ProjectsHeader = styled.header`
     ${({
-    theme: {
-        fonts: {
-            header: { family },
-            large,
-        },
-    },
-}) => `
+        theme: {
+            fonts: {
+                header: { family },
+                large
+            }
+        }
+    }) => `
         font-family: ${family};
         font-size: ${large};
     `}
@@ -70,13 +70,7 @@ export const CollapseContainer = styled.div`
 `
 
 export const ProjectSpacer = styled.div`
-    ${({
-    theme: {
-        colors: { white },
-    },
-}) => `
-        background: ${white}; 
-    `}
+    background: var(--white-color);
     z-index: 1;
     width: 150%;
     height: 34rem;

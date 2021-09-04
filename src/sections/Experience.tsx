@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, memo } from 'react'
 import Job from '../components/Job'
 import ceal from '../assets/ceal.png'
 import navstick from '../assets/navstick.svg'
@@ -10,11 +10,11 @@ import {
     WidthManager,
     ExperienceHeader,
     ExperienceContainer,
-    ExperienceSpacer,
+    ExperienceSpacer
 } from './styles/ExperienceStyles'
 import Shape from '../components/Shape'
 
-interface Props { }
+interface Props {}
 
 const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
     return (
@@ -71,7 +71,14 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         description={
                             'During my time at Apple I built tooling for the Customer Feedback Engineering team. I created custom designs for different user interfaces by following an iterative design process which consisted of talking to users and creating both paper prototypes and wireframes. After completing the design process, I developed the designs into a fullstack application using a Ruby on Rails backend with the GraphQL Ruby gem. I then used an Apollo middleware to fetch data from the backend. Finally, I built the frontend application based on my previous designs concepts using SwiftUI as well as specialized AppKit views.'
                         }
-                        languages={['SWIFT', 'RAILS', 'SWIFTUI', 'APPKIT', 'UIKIT', 'GRAPHQL']}
+                        languages={[
+                            'SWIFT',
+                            'RAILS',
+                            'SWIFTUI',
+                            'APPKIT',
+                            'UIKIT',
+                            'GRAPHQL'
+                        ]}
                         tags={['UI & UX', 'Fullstack Dev']}
                         width={'65%'}
                         img_alt={'Apple Logo'}
@@ -100,7 +107,7 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                             'BASH',
                             'C#',
                             'UNITY',
-                            'PARSE',
+                            'PARSE'
                         ]}
                         tags={['UI & UX', 'Fullstack Dev']}
                         width={'60%'}
@@ -138,4 +145,4 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
     )
 })
 
-export default Experience
+export default memo(Experience)
