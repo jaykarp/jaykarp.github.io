@@ -78,7 +78,7 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
                             <Link color={'#D0E8F2'}>github.</Link>
                         </LinkContainer>
                         <LinkContainer
-                            href={'https://docs.google.com/viewer?url=https://github.com/jaykarp/jaykarp.github.io/raw/main/public/jk_resume_2023.pdf'}
+                            href={'https://docs.google.com/viewer?url=https://github.com/jaykarp/jaykarp.github.io/raw/gh-pages/jk_resume_2023.pdf'}
                             target={'_blank'}
                             rel={'noreferrer noopener'}
                         >
