@@ -18,7 +18,7 @@ interface Props { }
 
 const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
     useEffect(() => {
-        const email = `amxrMjIyNUBjb2x1bWJpYS5lZHU=`
+        const email = `amthcnAudGVjaEBnbWFpbC5jb20=`
         const links = document.querySelectorAll<HTMLElement>(
             `[data-gen='email']`
         )
@@ -78,7 +78,7 @@ const Connect = forwardRef<HTMLDivElement>((props: Props, ref) => {
                             <Link color={'#D0E8F2'}>github.</Link>
                         </LinkContainer>
                         <LinkContainer
-                            href={'https://docs.google.com/viewer?url=https://github.com/jaykarp/jaykarp.github.io/raw/main/public/jk_resume_2021.pdf'}
+                            href={'https://docs.google.com/viewer?url=https://github.com/jaykarp/jaykarp.github.io/raw/main/public/jk_resume_2023.pdf'}
                             target={'_blank'}
                             rel={'noreferrer noopener'}
                         >

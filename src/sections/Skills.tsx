@@ -85,20 +85,15 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                     <GridLanguages>
                         <LanguagesContainer>
                             <LanguagesHeader>Languages.</LanguagesHeader>
+                            <Language>Golang</Language>
                             <Language>Typescript & Javascript</Language>
                             <Language>HTML & CSS</Language>
-                            <Language>C & C++</Language>
-                            <Language>C#</Language>
+                            <Language>C</Language>
                             <Language>Swift</Language>
-                            <Language>Java</Language>
-                            <Language>Golang</Language>
-                            <Language>SQL</Language>
                             <Language>Haskell</Language>
                             <Language>Ruby</Language>
                             <Language>Bash</Language>
-                            <Language>Mips Assembly</Language>
                             <Language>LaTeX</Language>
-                            <Language>Rust</Language>
                         </LanguagesContainer>
                     </GridLanguages>
                     <GridFrameworks>
@@ -110,7 +105,6 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                                     </FrameworksHeader>
                                     <Framework>React</Framework>
                                     <Framework>Styled UI</Framework>
-                                    <Framework>Svelte</Framework>
                                     <Framework>Node.js</Framework>
                                     <Framework>GraphQL</Framework>
                                     <Framework>Bootstrap</Framework>
@@ -120,13 +114,11 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                                 <FrameworksRight>
                                     <Framework>SwiftUI</Framework>
                                     <Framework>AppKit & UIKit</Framework>
-                                    <Framework>Django</Framework>
                                     <Framework>NumPy</Framework>
                                     <Framework>Selenium</Framework>
                                     <Framework>Flask</Framework>
                                     <Framework>Tensorflow</Framework>
                                     <Framework>Ruby On Rails</Framework>
-                                    <Framework>Unity</Framework>
                                     <Framework>Parse</Framework>
                                 </FrameworksRight>
                             </LRContainer>
@@ -141,23 +133,18 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
                                 <TechnologiesLeft>
                                     <Technology>Vim</Technology>
                                     <Technology>TMUX</Technology>
-                                    <Technology>Zsh & Fsh</Technology>
                                     <Technology>VS Code</Technology>
                                     <Technology>Microsoft Office</Technology>
                                     <Technology>Git & Github</Technology>
                                     <Technology>G Suite</Technology>
                                     <Technology>Docker</Technology>
-                                    <Technology>Kubernetes</Technology>
                                 </TechnologiesLeft>
                                 <TechnologiesRight>
                                     <Technology>AWS</Technology>
-                                    <Technology>Google Cloud</Technology>
                                     <Technology>Firebase</Technology>
-                                    <Technology>Heroku</Technology>
                                     <Technology>&nbsp;</Technology>
                                     <Technology>Balsamiq</Technology>
                                     <Technology>Figma</Technology>
-                                    <Technology>Zeplin</Technology>
                                     <Technology>MailChimp</Technology>
                                 </TechnologiesRight>
                             </LRContainer>

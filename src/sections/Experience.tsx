@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react'
 import Job from '../components/Job'
+import twitch from '../assets/twitch.png'
 import ceal from '../assets/ceal.png'
 import navstick from '../assets/navstick.svg'
 import cheddar from '../assets/cheddar.svg'
@@ -26,7 +27,7 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         size={'4rem'}
                         rotation={'40deg'}
                         top={'4%'}
-                        left={'30%'}
+                        left={'25%'}
                     />
                     <Shape
                         shape={'circle'}
@@ -53,7 +54,7 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         shape={'circle'}
                         size={'6rem'}
                         rotation={'75deg'}
-                        top={'72%'}
+                        top={'77%'}
                         left={'15%'}
                     />
                     <Shape
@@ -65,6 +66,19 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         xleft={'41%'}
                     />
                     <ExperienceHeader>Experience</ExperienceHeader>
+                    <Job
+                        title={'twitch.'}
+                        logo={twitch}
+                        description={
+                            'The backbone that powers twitch\'s video infrastructure is an AWS team called Amazon IVS (or interactive video services). As an engineer within Amazon IVS, I work on the interactivity team developing and architecting high-quality features that provide interactivity to a customers video stream. I am responsible for building new features using AWS infrastructure best practice to provide customers with operational excellence, and responsible for optimizing the performance, reliability, and scalability of our cloud systems.'
+                        }
+                        languages={['GOLANG', 'TYPESCRIPT', 'AWS', 'CDK', 'PYTHON', 'OPS']}
+                        tags={['Cloud Engineering and Architecture', 'Operations']}
+                        width={'49%'}
+                        img_alt={'Twitch Logo'}
+                        right
+                    />
+
                     <Job
                         title={'apple.'}
                         logo={apple}

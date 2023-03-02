@@ -63,7 +63,7 @@ export const GridLanguages = styled.div`
     display: flex;
     align-items: flex-start;
 
-    margin-right: 20px;
+    # margin-right: 20px;
     @media (max-width: 800px) {
         justify-content: center;
         margin-right: -50%;

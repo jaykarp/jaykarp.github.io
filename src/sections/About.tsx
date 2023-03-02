@@ -30,14 +30,13 @@ const About = (props: Props) => {
                     </CloudContainer>
                     <TextContainer>
                         <AboutText>
-                            I’m a masters’ student pursuing a MS in Computer
-                            Science at Columbia University. My interests span
-                            the full product development process, from user
+                            I’m a software engineer working at Twitch as part of Amazon Web Services IVS.
+                            My interests span the full product development process, from user
                             research and prototyping to system implementation
                             and design. When I’m not programming, you can find
                             me playing saxophone and piano or baking fresh
                             bread. I’m currently looking for job opportunities
-                            for 2022. Check out some of my projects below - including 
+                            for 2023. Check out some of my projects below - including 
                             the website itself! And please contact me with any 
                             questions or opportunities.
                         </AboutText>
