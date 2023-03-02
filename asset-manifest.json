@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.90c63da7.chunk.css",
-    "main.js": "/static/js/main.e0a2333d.chunk.js",
-    "main.js.map": "/static/js/main.e0a2333d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2f722d21.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2f722d21.js.map",
-    "static/js/2.ccd1533a.chunk.js": "/static/js/2.ccd1533a.chunk.js",
-    "static/js/2.ccd1533a.chunk.js.map": "/static/js/2.ccd1533a.chunk.js.map",
+    "main.js": "/static/js/main.81c15e05.chunk.js",
+    "main.js.map": "/static/js/main.81c15e05.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.da4f4f09.js",
+    "runtime-main.js.map": "/static/js/runtime-main.da4f4f09.js.map",
+    "static/js/2.37f8c4fa.chunk.js": "/static/js/2.37f8c4fa.chunk.js",
+    "static/js/2.37f8c4fa.chunk.js.map": "/static/js/2.37f8c4fa.chunk.js.map",
     "index.html": "/index.html",
     "service-worker.js": "/service-worker.js",
+    "service-worker.js.LICENSE.txt": "/service-worker.js.LICENSE.txt",
     "service-worker.js.map": "/service-worker.js.map",
     "static/css/main.90c63da7.chunk.css.map": "/static/css/main.90c63da7.chunk.css.map",
-    "static/js/2.ccd1533a.chunk.js.LICENSE.txt": "/static/js/2.ccd1533a.chunk.js.LICENSE.txt",
+    "static/js/2.37f8c4fa.chunk.js.LICENSE.txt": "/static/js/2.37f8c4fa.chunk.js.LICENSE.txt",
     "static/media/apple.79989d8c.png": "/static/media/apple.79989d8c.png",
     "static/media/cartoon_jay.5117ba6d.png": "/static/media/cartoon_jay.5117ba6d.png",
     "static/media/ceal.ab7fc4ea.png": "/static/media/ceal.ab7fc4ea.png",
@@ -23,13 +24,14 @@
     "static/media/pentagon.683bf69c.svg": "/static/media/pentagon.683bf69c.svg",
     "static/media/square.9a434268.svg": "/static/media/square.9a434268.svg",
     "static/media/triangle.8617b27a.svg": "/static/media/triangle.8617b27a.svg",
+    "static/media/twitch.1f03ca8f.png": "/static/media/twitch.1f03ca8f.png",
     "static/media/vanderbilt.061f6b48.png": "/static/media/vanderbilt.061f6b48.png",
     "static/media/wordcloud_square.7ae3cb28.png": "/static/media/wordcloud_square.7ae3cb28.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f722d21.js",
-    "static/js/2.ccd1533a.chunk.js",
+    "static/js/runtime-main.da4f4f09.js",
+    "static/js/2.37f8c4fa.chunk.js",
     "static/css/main.90c63da7.chunk.css",
-    "static/js/main.e0a2333d.chunk.js"
+    "static/js/main.81c15e05.chunk.js"
   ]
 }
