@@ -70,7 +70,7 @@ const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
                         title={'twitch.'}
                         logo={twitch}
                         description={
-                            'The backbone that powers twitch\'s video infrastructure is an AWS team called Amazon IVS (or interactive video services). As an engineer within Amazon IVS, I work on the interactivity team developing and architecting high-quality features that provide interactivity to a customers video stream. I am responsible for building new features using AWS infrastructure best practice to provide customers with operational excellence, and responsible for optimizing the performance, reliability, and scalability of our cloud systems.'
+                            'The backbone that powers twitch\'s video infrastructure is an AWS team called Amazon IVS (or interactive video services). As an engineer within Amazon IVS, I work on the core API and infrastructure team developing and architecting high-quality real time video and interactivity features and handling millions of minutes of real time streaming data per day. I am responsible for building new features using AWS infrastructure best practice to provide customers with operational excellence, and responsible for optimizing the performance, reliability, and scalability of our cloud systems.'
                         }
                         languages={['GOLANG', 'TYPESCRIPT', 'AWS', 'CDK', 'PYTHON', 'OPS']}
                         tags={['Cloud Engineering and Architecture', 'Operations']}
