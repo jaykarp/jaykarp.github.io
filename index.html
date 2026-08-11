@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Jay L Karp</title>
+  <meta name="description" content="Jay Karp, software engineer." />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <meta property="og:title" content="Jay L Karp" />
+  <meta property="og:description" content="Jay Karp, software engineer." />
+  <meta property="og:image" content="https://jay-karp.com/logo.png" />
+  <meta property="og:url" content="https://jay-karp.com" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <main>
+    <h1>Jay Karp</h1>
+    <p class="tag">New York City</p>
+    <p>
+      Senior software engineer, working on video infrastructure at AWS.
+    </p>
+
+    <h2>Work</h2>
+    <ul class="jobs">
+      <li>
+        <span class="org">Amazon IVS</span>: Senior software engineer. Live and real-time video engineering with a focus on operational excellence and scale. 
+      </li>
+      <li>
+        <span class="org">Apple</span>: Software engineer. Customer success and feedback engineering team. 
+      </li>
+      <li>
+        <span class="org">Cheddar</span>: Software engineer. Fullstack systems for news outlet. 
+      </li>
+    </ul>
+
+    <h2>Research</h2>
+    <ul class="jobs">
+      <li>
+        <span class="org">Columbia CEAL</span>: Accessibility research on audio navigation. User studies and the software behind them.
+      </li>
+      <li>
+        <span class="org">Vanderbilt</span>: Natural language tooling for electronic health
+        records.
+      </li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul class="jobs">
+      <li>
+        <span class="org">Columbia University</span>: MS in computer science, Fu Foundation
+        School of Engineering.
+      </li>
+      <li>
+        <span class="org">Columbia University</span>: BA in computer science, Columbia College.
+      </li>
+    </ul>
+
+    <h2>Contact</h2>
+    <ul class="links">
+      <li><a href="https://docs.google.com/viewer?url=https://jay-karp.com/jk_resume_2026.pdf"
+          target="_blank" rel="noreferrer noopener">CV</a></li>
+      <li><a href="https://www.github.com/jaykarp">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/jaykarp/">LinkedIn</a></li>
+      <li><a id="email" href="#">Email</a></li>
+    </ul>
+
+    <footer>
+      Copyright &copy; Jay Karp <span id="year">2026</span>.
+    </footer>
+  </main>
+
+  <script>
+    // The old React site registered a service worker that precached it. Tear any
+    // existing registration down so returning visitors don't get served the old
+    // page out of cache. Safe to delete once traffic has cycled through.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (rs) {
+        rs.forEach(function (r) { r.unregister(); });
+      });
+    }
+    if (window.caches) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (k) { caches.delete(k); });
+      });
+    }
+  </script>
+
+  <script>
+    // Keeps the footer year current without an edit each January.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    // Kept from the old site: assemble the address on interaction so it isn't
+    // sitting in the markup for scrapers.
+    var link = document.getElementById('email');
+    link.onmouseover = link.onfocus = link.ontouchstart = function () {
+      link.href = 'mailto:' + atob('amthcnAudGVjaEBnbWFpbC5jb20=');
+    };
+  </script>
+</body>
+
+</html>
